@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const age = prompt("Quel est votre âge ?")
+        const majeur = age >= 18
+        const mineur = age <= 17 && age > 13
+        const a = "Lilo et stich"
+        const b = "Matrix"
+        const c = "Devil Dead"
+        const catalogue = [a, b, c]
+
+        if(majeur) {
+            console.log("Tu as accès à tout le catalogue")
+            console.log(catalogue [0])
+            console.log(catalogue [1])
+            console.log(catalogue [2])
+        } 
+        else if (mineur) {
+            console.log("Tu as accès au catalogue mineur")
+            console.log(catalogue[0])
+            console.log(catalogue[1])
+        }
+        else {
+            console.log("Tu as accès au catalogue enfant")
+            console.log(catalogue[0])
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
